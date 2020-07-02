@@ -11,4 +11,3 @@ div {position: center;}
 <br bis_size="{'x':16,'y':26,'w':0,'h':17,'abs_x':208,'abs_y':163}" /></div>
 </div>
 </div>
-</center>
