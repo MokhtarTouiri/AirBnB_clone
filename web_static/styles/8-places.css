@@ -1,126 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+.places {
+   flex-flow: row wrap;
+   width: 100%;
+   display: flex;
+   margin-top: 20px;
+   justify-content: center;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/icon.png">
-    <link rel="stylesheet" href="styles/4-common.css">
-    <link rel="stylesheet" href="styles/6-filters.css">
-    <link rel="stylesheet" href="styles/3-header.css">
-    <link rel="stylesheet" href="styles/3-footer.css">
-    <link rel="stylesheet" href="styles/8-places.css">
-    <title>Airbnb clone</title>
-</head>
+.places h1 {
+    padding: 15px;
+    font-size: 30px;
+    text-align: left;
+    flex-basis: 90%;
+}
 
-<body>
-    <header>
-        <img src="images/logo.png">
-    </header>
+.places article {
+    grid-row-start: 2;
+    display: flex;
+    order: 2;
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: #FF5A5F solid 1px;
+    border-radius: 4px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.places h2 {
+    padding-left: 100px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 70px;
+}
+
+.price_by_night {
+    width: 80px;
+    height: 80px;
+    color: #FF5A5F;
+    border: #FF5A5F solid 4px;
+    border-radius: 50%;
+    text-align: center;
+    min-width: 60px;
+    font-size: 30px;
+    line-height: 85px;
+    margin-right: -5px;
+    margin-top: -5px;
+}
+
+.information {
+    font-size: 16px;
+    justify-content: space-around;
+    height: 80px;
+    border-bottom: #DDDDDD solid 1px;
+    border-top: #DDDDDD solid 1px;
+    display: flex;
+    width: 100%;
+}
+
+.max_guest {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number_rooms {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number_bathrooms {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guest {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/icon_group.png');
+}
+.nb_room p {
+
+display: inline-block; 
+width: 150px;
+margin-top: -50px;
+
+}
+.nb_bathroom p {
+
+    display: inline-block; 
+    width: 150px;
+    margin-top: -50px;
     
-    <div class="container">
-        <section class="filters">
-            <div class="locations"><h3>States</h3><h4>California, Arizona...</h4><ul class="popover">
-                    <li><h2>Arizona:</h2></li>
-                    <li>Page</li>
-                    <li>Page2</li>
-                    <li><h2>California:</h2></li>
-                    <li>San Francisco<li>
-                    <li>Los Altos</li>
-                </ul>
-            </div>
-            <div class="amenities">
-                <h3>Amenities</h3><h4>Internet, Kitchen...</h4><ul class="popover">
-                    <li>
-                        Internet
-                    </li>
-                    
-                    <li>
-                        TV
-                    </li>
-                    
-                    <li>
-                        Kitchen
-                    </li>
-                    
-                    <li>
-                        Iron
-                    </li>
-                
-                </ul>
-            </div>
-        <button>Search</button>
-    </section>
-    <section class="places">
-        <h1>
-            Places
-        </h1>
-        <article>
-            <h2>My Home</h2>
-            <div class="price_by_night">$80</div>
-            <div class="information">
-                <div class="guest"><span>2 Guests</span></div>
-                <div class="nb_room"><span>1 Bedroom</span></div>
-                <div class="nb_bathroom"><span>1 bathroom</span></div>
-            </div>
-            <div class="user">
-                <strong>Owner:</strong> John Lennon
-            </div>
-            <div class="description">This is a lovely 1 bedroom and 1 bathroom apartment that can accomodate 2
-                people. It locates at the center of Shangai and next to subway line 1, 1 stop to People Square, 2
-                stops to Bund, 3 stops to Jinghan Temple.
-            </div>
-        </article>
-        
-        <article>
-            <h2>Tiny House</h2>
-            <div class="price_by_night">$65</div>
-            <div class="information">
-                <div class="guest"><span>4 Guests</span></div>
-                <div class="nb_room"><span>2 Bedroom</span></div>
-                <div class="nb_bathroom"><span>1 bathroom</span></div>
-            </div>
-            <div class="user">
-                <strong>Owner:</strong> Adrienne
-            </div>
-            <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non augue nec dui pharetra
-                blandit ut eu lacus. Morbi interdum venenatis nisl, nec dignissim ligula ornare ac. In at odio vel
-                nisl rhoncus aliquam convallis a sem. Sed vel purus id lorem blandit tristique non id eros. Class
-                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla placerat
-                odio velit. Maecenas maximus tellus a turpis pharetra luctus. Proin velit sem, luctus vel dolor in,
-                efficitur feugiat ipsum. Nunc non scelerisque ante. Curabitur a est viverra enim ullamcorper
-                tincidunt ac eu ipsum.
-            </div>
-        </article>
-        
-        <article>
-            <h2>A Suite</h2>
-            <div class="price_by_night">$195</div>
-            <div class="information">
-                <div class="guest"><span>2 Guests</span></div>
-                <div class="nb_room"><span>1 Bedroom</span></div>
-                <div class="nb_bathroom"><span>1 bathroom</span></div>
-            </div>
-            <div class="user">
-                <strong>Owner:</strong> John Doe
-            </div>
-            <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non augue nec dui pharetra
-                blandit ut eu lacus. Morbi interdum venenatis nisl, nec dignissim ligula ornare ac. In at odio vel
-                nisl rhoncus aliquam convallis a sem. Sed vel purus id lorem blandit tristique non id eros. Class
-                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla placerat
-                odio velit. Maecenas maximus tellus a turpis pharetra luctus. Proin velit sem, luctus vel dolor in,
-                efficitur feugiat ipsum. Nunc non scelerisque ante. Curabitur a est viverra enim ullamcorper
-                tincidunt ac eu ipsum.
-            </div>
-        </article>
-    
-    </section>
-</div>
-    <footer>
-        <p>Holberton School</p>
-    </footer>
-</body>
+    }
+.guest p {
 
-</html>
+        display: inline-block; 
+        width: 150px;
+        margin-top: -50px;
+        
+}
+.nb_room {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/icon_bed.png');
+}
+
+.nb_bathroom{
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/icon_bath.png');
+}
+
+.user {padding: 10px 0;}
+
+p {padding-top: 100px;}
+h2 {
+    margin-left: -25px;
+}
