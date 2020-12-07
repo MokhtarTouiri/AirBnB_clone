@@ -1,3 +1,3 @@
 <center>
-  <img src="https://ibb.co/3fxQ1VC"></img>
+  <img src="https://i.ibb.co/cbWVJRr/logo.png"></img>
 </center>
