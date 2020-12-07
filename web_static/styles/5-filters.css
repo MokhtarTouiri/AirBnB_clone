@@ -14,14 +14,14 @@ button
 {
     height: 48px;
     font-size: 18px;
-	background: #FF5A5F;
+    background: #FF5A5F;
     width: 20%;
     color: #FFFFFF;
     border: 0;
-	margin-right: 30px;
-	margin-left: auto;
+    margin-right: 30px;
+    margin-left: auto;
     border-radius: 4px;
-	align-self: center;
+    align-self: center;
 }
 button:hover {opacity: 0.9;}
 h3 {font-weight: 600; color: #484848; margin: 10px 40px 5px;}
